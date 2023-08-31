@@ -15,4 +15,4 @@ if __name__ == '__main__':
     #       "SparkByExamples.com").getOrCreate()
 
     df = spark.read.options(header='True', inferSchema='True').csv("s3://takeo123/capstone/Patient_records.csv")
-    df.write.parquet("s3://takeo123/capstone/Patient_records.parquet")
+    df.write.parquet("s3://takeo123/capstone/parquet")
